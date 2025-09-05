@@ -1,0 +1,20 @@
+button{
+    background-color: #a12d2d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#increment-btn{
+    background-color: #6a1b1b; /* Blue */
+}
+
+#save-btn{
+    background-color: #1b6a1b; /* Green */
+}

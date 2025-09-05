@@ -1,0 +1,59 @@
+:root{
+    --speed: 5;
+}
+
+.machine{
+    background-color: peru;
+    border: dashed brown 3px;
+    height: 150px;
+    width: auto;
+    margin: 30px;
+    padding: 8px;
+
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.slot{
+    background-color: rgb(233, 176, 139);
+
+    height: 100%;
+    width: 33.33%;
+    border: solid 2px rgb(12, 12, 70);
+
+    text-align: center;
+    font-size: 60pt;
+    line-height: 145px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.slot > .value{
+    z-index: 3;
+    animation: slotspin infinite;
+    animation-duration: calc(1s / (var(--speed)));
+}
+
+#inpspeed{
+    margin: 0px 30px;
+    width: 50px;
+    height: 50px;
+
+    font-size: x-large;
+    font-weight: bold;
+
+    border:rgb(12, 12, 70) solid 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slotspin{
+    0%{
+        transform: translateY(-70px);
+    }
+    100%{
+        transform: translateY(170px);
+    }
+}
